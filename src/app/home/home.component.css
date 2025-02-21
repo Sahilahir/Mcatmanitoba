@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.hero-section {
+  background: url("../../assets/scale.jpg") no-repeat center/contain;
+  background-color: white; /* Light background for contrast */
+  background-size: 150px; /* Adjust the image size */
+  background-position: center top;
+  padding: 100px 0; /* Adjust padding to center content */
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.feature-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+}
+.news-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
