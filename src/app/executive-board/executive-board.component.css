@@ -1,0 +1,44 @@
+.board-card {
+  border-radius: 12px;
+  /* box-shadow: 0 4px 10px rgba(18, 159, 224, 0.15); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.hero-section {
+  background-color: rgb(255, 255, 255); /* Light background for contrast */
+  background-size: 150px; /* Adjust the image size */
+  background-position: center top;
+  padding: 100px 0; /* Adjust padding to center content */
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hover effect */
+.board-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(11, 175, 251, 0.15);
+}
+
+/* Title styling */
+.board-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #474787;
+}
+
+/* Name Styling */
+.board-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive spacing */
+.board-container {
+  padding: 40px 15px;
+}

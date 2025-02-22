@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.hero-section {
+  background-color: rgb(255, 255, 255); /* Light background for contrast */
+  background-size: 150px; /* Adjust the image size */
+  background-position: center top;
+  padding: 100px 0; /* Adjust padding to center content */
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

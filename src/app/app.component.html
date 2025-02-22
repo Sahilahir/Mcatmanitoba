@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
   <div class="container">
     <a class="navbar-brand" (click)="navigateHome()">MCAT Manitoba</a>
     <button
@@ -15,41 +15,36 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <button
-            class="nav-link" (click)="navigateHome()"
-          >
-            Home
-        </button>
+          <button class="nav-link" [ngClass]="{'active': isActive('/')}" (click)="navigateHome()">Home</button>
         </li>
         <li class="nav-item">
-          <button
-            class="nav-link" (click)="navigateAbout()"
-          >
-            About
-          </button>
+          <button class="nav-link" [ngClass]="{'active': isActive('/about')}" (click)="navigateAbout()">About</button>
         </li>
         <li class="nav-item">
-          <button
-            class="nav-link" (click)="navigateContact()"
-          >
-            Contact
-          </button>
+          <button class="nav-link" [ngClass]="{'active': isActive('/events')}" (click)="navigateEvents()">Events</button>
         </li>
         <li class="nav-item">
-          <button
-            class="nav-link" (click)="navigateEvents()"
-          >
-            Events
-          </button>
+          <button class="nav-link" [ngClass]="{'active': isActive('/executive-board')}" (click)="navigateExecutiveBoard()">Executive Board</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" [ngClass]="{'active': isActive('/by-laws')}" (click)="navigateByLaws()">By-Laws</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" [ngClass]="{'active': isActive('/resources')}" (click)="navigateResources()">Resources</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" [ngClass]="{'active': isActive('/resource-material')}" (click)="navigateResourceMaterial()">Resource Material</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" [ngClass]="{'active': isActive('/contact')}" (click)="navigateContact()">Contact</button>
         </li>
       </ul>
     </div>
-    <a href="#" class="btn btn-primary">Get Started</a>
   </div>
 </nav>
 <router-outlet></router-outlet>
 <footer class="footer">
   <div class="container">
-    <p>© The Manitoba Council of Administrative Tribunals 2021</p>
+    <p style="color: #AAABB8;">© The Manitoba Council of Administrative Tribunals 2021</p>
   </div>
 </footer>
