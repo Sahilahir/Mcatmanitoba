@@ -12,3 +12,74 @@ body {
   align-items: center;
   text-align: center;
 }
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+p, li {
+  font-size: 1.2rem;
+}
+
+.resource-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.resource-card:hover,
+.resource-card:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(128, 0, 128, 0.5);
+}
+.resource-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+.resource-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.resource-container .col-md-4 {
+  display: flex;
+}
+.resource-container .card {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.resource-container .card h5 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-group-item {
+  font-size: 1.2rem;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+.list-group-item:hover {
+  background: #97d4ff;
+  transform: scale(1.02);
+}
+.resource-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  display: block;
+  padding: 10px 15px;
+}
+.resource-link:hover {
+  color: #000000;
+}

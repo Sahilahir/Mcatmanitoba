@@ -1,16 +1,15 @@
-.board-card {
-  border-radius: 12px;
-  /* box-shadow: 0 4px 10px rgba(18, 159, 224, 0.15); */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+/* General Styling */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
 }
+
+/* Hero Section */
 .hero-section {
-  background-color: rgb(255, 255, 255); /* Light background for contrast */
-  background-size: 150px; /* Adjust the image size */
-  background-position: center top;
-  padding: 100px 0; /* Adjust padding to center content */
+  background-color: rgb(255, 255, 255);
+  padding: 100px 0;
   min-height: 300px;
   display: flex;
   justify-content: center;
@@ -18,13 +17,33 @@ body {
   text-align: center;
 }
 
-/* Hover effect */
+/* Board Section */
+.board-container {
+  padding: 40px 15px;
+}
+
+/* Board Card */
+.board-card {
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
 .board-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(11, 175, 251, 0.15);
 }
 
-/* Title styling */
+/* Title Styling */
 .board-title {
   font-size: 1.1rem;
   font-weight: bold;
@@ -38,7 +57,9 @@ body {
   color: #333;
 }
 
-/* Responsive spacing */
-.board-container {
-  padding: 40px 15px;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .board-container {
+      padding: 20px;
+  }
 }
